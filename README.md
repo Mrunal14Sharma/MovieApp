@@ -47,27 +47,30 @@ MovieApp/
 │
 ├── src/
 │   ├── components/
-        ├── Moviecard
+        ├── Moviecard/
             ├── Moviecard.jsx
             └── moviecard.css
-        ├── Moviemodal
+        ├── Moviemodal/
             ├── Moviemodal.jsx
             └── moviemodal.css
-        ├── Navbar
+        ├── Navbar/
             ├── Navbar.jsx
             └── Navbar.css
-        ├── ProtectedRoute
+        ├── ProtectedRoute/
             └── ProtectedRoute.jsx
 │   ├── pages
-        ├──Home
-        ├──Login
-        └──Watchlist
+        ├──Home/
+        ├──Login/
+        └──Watchlist/
 │   ├── data/
 │   │   ├── movies.js
 │   │   └── users.js
     ├── service/
         ├── movieApi.js
 │   │   └── authApi.js
+    ├── redux/
+        ├── store.js
+│   │   └── watchlistSlice.js
 │   └── App.js
 │
 ├── public/
@@ -169,7 +172,7 @@ npm install
 ### Step 4: Start Development Server
 
 ```bash
-npm start
+npm run dev
 ```
 
 The application will start locally and open in your browser.
@@ -177,7 +180,7 @@ The application will start locally and open in your browser.
 If it does not open automatically, visit:
 
 ```text
-http://localhost:3000
+http://localhost:5127
 ```
 
 ---
@@ -191,30 +194,6 @@ npm run build
 ```
 
 The production-ready files will be generated inside the `build` folder.
-
----
-
-## 📌 Future Enhancements
-
-- Backend authentication with JWT.
-- User registration functionality.
-- Persistent wishlist storage.
-- Movie details page.
-- Integration with external movie APIs.
-- Dark mode support.
-- Pagination and advanced filtering.
-
----
-
-## 🤝 Contributing
-
-Contributions, suggestions, and improvements are welcome.
-
-1. Fork the repository.
-2. Create a feature branch.
-3. Commit your changes.
-4. Push to your branch.
-5. Open a Pull Request.
 
 ---
 
